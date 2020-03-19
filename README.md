@@ -1,4 +1,4 @@
-# ocrcc_app
+# flutter_ocrcc
 
 A new Flutter project.
 
