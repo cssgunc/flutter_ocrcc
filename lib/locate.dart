@@ -15,12 +15,12 @@ class LocatePageState extends State<LocatePage> {
 
   static final CameraPosition _kChapelHill = CameraPosition(
     target: LatLng(35.913200, -79.055847),
-    zoom: 14.4746,
+    zoom: 14.5,
   );
 
   static final CameraPosition _kOCRCC = CameraPosition(
-      target: LatLng(35.930070, -79.032640),
-      zoom: 12.0,
+      target: LatLng(35.929935, -79.032577),
+      zoom: 20.0,
   );
 
   @override
@@ -138,6 +138,8 @@ class LocatePageState extends State<LocatePage> {
         )
       ),
       body: GoogleMap(
+        myLocationEnabled: true,
+        compassEnabled: true,
         mapType: MapType.hybrid,
         initialCameraPosition: _kChapelHill,
         onMapCreated: (GoogleMapController controller) {
@@ -158,9 +160,13 @@ class LocatePageState extends State<LocatePage> {
     return <Marker>[
       Marker(
         markerId: MarkerId("OCRCC"),
-        position: LatLng(35.930070, -79.032640),
+        position: LatLng(35.929935, -79.032577),
         icon: BitmapDescriptor.defaultMarkerWithHue(
             BitmapDescriptor.hueRed,
+        ),
+        infoWindow: InfoWindow(
+          title: "1506 East Franklin St., Suite 200, Chapel Hill, NC 27514",
+          snippet: "Bus Routes: 400, D/F",
         ),
       ),
     ].toSet();

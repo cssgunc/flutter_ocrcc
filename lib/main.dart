@@ -7,7 +7,7 @@ import 'locate.dart';
 import 'resources.dart';
 
 void main() => runApp(MyApp());
-
+//  TODO: Add app icon
 //  TODO: https://flutter.dev/docs/development/ui/splash-screen/android-splash-screen
 //  TODO: Add fonts (Josefin Sans, Sans-Serif) https://pub.dev/packages/google_fonts
 //  TODO: Add password and app lock
