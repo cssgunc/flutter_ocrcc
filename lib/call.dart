@@ -31,7 +31,6 @@ class _CallPageState extends State<CallPage> {
           child: Column(
             children: <Widget>[
               Container(
-                height: 175.0,
                 width: double.infinity,
                 color: Colors.white,
                 child: DrawerHeader(

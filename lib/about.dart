@@ -30,7 +30,6 @@ class _AboutPageState extends State<AboutPage> {
           child: Column(
             children: <Widget>[
               Container(
-                height: 175.0,
                 width: double.infinity,
                 color: Colors.white,
                 child: DrawerHeader(

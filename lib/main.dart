@@ -28,12 +28,16 @@ class MyApp extends StatelessWidget {
         //    Colors.grey
         //    Colors.black
         //  New scheme:
+        //    Light Grey: #F7F7F7 => Color(0xFFF7F7F7)
+        //    Dark Grey: #7A7A7A => Color(0xFF7A7A7A)
         //    Teal: #48B9BC => Color(0xFF48B9BC)
-        //    Purple: #823876 => Color(0xFF823876)
         //    Yellow: #F7CA57 => Color(0xFFF7CA57)
+        //    Purple: #823876 => Color(0xFF823876)
+        //      static const OCRCC_Light_Grey = Color(0xFFF7F7F7);
+        //      static const OCRCC_Dark_Grey = Color(0xFF7A7A7A);
         //      static const OCRCC_Teal = Color(0xFF48B9BC);
-        //      static const OCRCC_Purple = Color(0xFF823876);
         //      static const OCRCC_Yellow = Color(0xFFF7CA57);
+        //      static const OCRCC_Purple = Color(0xFF823876);
       ),
       initialRoute: '/',
       routes: {
@@ -75,7 +79,6 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             children: <Widget>[
               Container(
-                height: 175.0,
                 width: double.infinity,
                 color: Colors.white,
                 child: DrawerHeader(

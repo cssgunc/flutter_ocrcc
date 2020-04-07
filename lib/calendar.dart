@@ -116,7 +116,6 @@ class _CalendarPageState extends State<CalendarPage> with TickerProviderStateMix
           child: Column(
             children: <Widget>[
               Container(
-                height: 175.0,
                 width: double.infinity,
                 color: Colors.white,
                 child: DrawerHeader(

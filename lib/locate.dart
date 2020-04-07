@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 //  TODO: Follow instructions in https://pub.dev/packages/google_maps_flutter
-//  TODO: Keep track of API calls/usage
-//  keys in android/app/src/main/AndroidManifest.xml, ios/Runner/AppDelegate.swift
+//  TODO: Keep track of API calls/usage keys in android/app/src/main/AndroidManifest.xml, ios/Runner/AppDelegate.swift
 class LocatePage extends StatefulWidget {
   @override
   State<LocatePage> createState() => LocatePageState();
@@ -44,7 +43,6 @@ class LocatePageState extends State<LocatePage> {
           child: Column(
             children: <Widget>[
               Container(
-                height: 175.0,
                 width: double.infinity,
                 color: Colors.white,
                 child: DrawerHeader(

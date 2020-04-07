@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//  TODO: Convert overlays into ind. pages w/ back buttons, revamp color layout
 class ResourcesPage extends StatefulWidget {
   ResourcesPage({Key key, this.title}) : super(key: key);
   final String title;
@@ -30,7 +31,6 @@ class _ResourcesPageState extends State<ResourcesPage> {
           child: Column(
             children: <Widget>[
               Container(
-                height: 175.0,
                 width: double.infinity,
                 color: Colors.white,
                 child: DrawerHeader(
@@ -124,72 +124,116 @@ class _ResourcesPageState extends State<ResourcesPage> {
         )
       ),
       body: Container(
-        child: GridView.count(
-          // padding: EdgeInsets.symmetric(vertical: 100.0, horizontal: 10.0),
-          crossAxisCount: 2,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisSize: MainAxisSize.max,
           children: <Widget>[
-            RaisedButton.icon(
-              color: Colors.white,
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (_) => HourHelpOverlay(),
-                );
-              },
-              icon: Icon(Icons.watch_later, size: 25.0),
-              label: Text('24-Hour Help',
-                style:(
-                  TextStyle(fontSize: 15.0)
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: (MediaQuery.of(context).size.height - 100) / 4,
+              child: RaisedButton.icon(
+                color: Colors.white,
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (_) => HourHelpOverlay(),
+                  );
+                },
+                icon: Icon(
+                  Icons.watch_later, 
+                  size: 25.0,
+                  color: Color(0xFF7A7A7A), // Dark Grey
+                ),
+                label: Text('24-Hour Help',
+                  style:(
+                    TextStyle(
+                      fontSize: 20.0,
+                      color: Color(0xFF7A7A7A), // Dark Grey
+                    )
+                  ),
                 ),
               ),
             ),
-            RaisedButton.icon(
-              color: Colors.white,
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (_) => SupportOverlay(),
-                );
-              },
-              icon: Icon(Icons.group, size: 25.0),
-              label: Text('Support Groups',
-                style:(
-                  TextStyle(fontSize: 15.0)
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: (MediaQuery.of(context).size.height - 100) / 4,
+              child: RaisedButton.icon(
+                color: Colors.white,
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (_) => SupportOverlay(),
+                  );
+                },
+                icon: Icon(
+                  Icons.group,
+                  size: 25.0,
+                  color: Color(0xFF48B9BC), // Teal
+                ),
+                label: Text('Support Groups',
+                  style:(
+                    TextStyle(
+                      fontSize: 20.0,
+                      color: Color(0xFF48B9BC), // Teal
+                    )
+                  ),
                 ),
               ),
             ),
-            RaisedButton.icon(
-              color: Colors.white,
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (_) => TherapyOverlay(),
-                );
-              },
-              icon: Icon(Icons.pets, size: 25.0),
-              label: Text('Therapy',
-                style:(
-                  TextStyle(fontSize: 15.0)
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: (MediaQuery.of(context).size.height - 100) / 4,
+              child: RaisedButton.icon(
+                color: Colors.white,
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (_) => TherapyOverlay(),
+                  );
+                },
+                icon: Icon(
+                  Icons.pets,
+                  size: 25.0,
+                  color: Color(0xFFF7CA57), // Yellow
+                ),
+                label: Text('Therapy',
+                  style:(
+                    TextStyle(
+                      fontSize: 20.0,
+                      color: Color(0xFFF7CA57), // Yellow
+                    )
+                  ),
                 ),
               ),
             ),
-            RaisedButton.icon(
-              color: Colors.white,
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (_) => AdvocacyOverlay(),
-                );
-              },
-              icon: Icon(Icons.laptop, size: 25.0),
-              label: Text('Advocacy',
-                style:(
-                  TextStyle(fontSize: 15.0)
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: (MediaQuery.of(context).size.height - 100) / 4,
+              child: RaisedButton.icon(
+                color: Colors.white,
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (_) => AdvocacyOverlay(),
+                  );
+                },
+                icon: Icon(
+                  Icons.laptop,
+                  size: 25.0,
+                  color: Color(0xFF823876), // Purple
+                ),
+                label: Text('Advocacy',
+                  style:(
+                    TextStyle(
+                      fontSize: 20.0,
+                      color: Color(0xFF823876), // Purple
+                    )
+                  ),
                 ),
               ),
             ),
           ],
-        )
+        ),
       ),
     );
   }
@@ -236,7 +280,7 @@ class HourHelpOverlayState extends State<HourHelpOverlay>
                     borderRadius: BorderRadius.circular(15.0))),
             child: Padding(
               padding: const EdgeInsets.all(50.0),
-              child: Text("Call this man right now: (919) 744-5964"),
+              child: Text('Call this man right now: (866) 935-4783'),
             ),
           ),
         ),
@@ -286,7 +330,7 @@ class SupportOverlayState extends State<SupportOverlay>
                     borderRadius: BorderRadius.circular(15.0))),
             child: Padding(
               padding: const EdgeInsets.all(50.0),
-              child: Text("This is for support"),
+              child: Text('This is for support'),
             ),
           ),
         ),
@@ -336,7 +380,7 @@ class TherapyOverlayState extends State<TherapyOverlay>
                     borderRadius: BorderRadius.circular(15.0))),
             child: Padding(
               padding: const EdgeInsets.all(50.0),
-              child: Text("Therapy dogs!"),
+              child: Text('Therapy dogs!'),
             ),
           ),
         ),
@@ -386,7 +430,7 @@ class AdvocacyOverlayState extends State<AdvocacyOverlay>
                     borderRadius: BorderRadius.circular(15.0))),
             child: Padding(
               padding: const EdgeInsets.all(50.0),
-              child: Text("Legal counsel"),
+              child: Text('Legal counsel'),
             ),
           ),
         ),
