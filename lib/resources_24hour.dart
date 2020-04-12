@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Resources24HourPage extends StatefulWidget {
   Resources24HourPage({Key key, this.title}) : super(key: key);
@@ -9,6 +10,15 @@ class Resources24HourPage extends StatefulWidget {
 }
 
 class _Resources24HourPageState extends State<Resources24HourPage> {
+
+  _launchURL() async {
+    const url = 'http://ocrcc.org/get-help/helpline/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,19 +57,13 @@ class _Resources24HourPageState extends State<Resources24HourPage> {
               height: (MediaQuery.of(context).size.height - 100) / 8,
               child: RaisedButton.icon(
                 color: Colors.white,
-                onPressed: (){
-                  // TODO: https://ocrcc.org/get-help/advocacy/
-                  // Navigator.pushReplacementNamed(
-                  //   context,
-                  //   '/resources_24hour',
-                  // );
-                },
+                onPressed: _launchURL,
                 icon: Icon(
                   Icons.blur_circular, 
                   size: 25.0,
                   color: Color(0xFF7A7A7A), // Dark Grey
                 ),
-                label: Text('OCRCC.org',
+                label: Text('ocrcc.org/helpline',
                   style:(
                     TextStyle(
                       fontSize: 20.0,

@@ -24,8 +24,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
-  url_launcher: ^5.4.1
-  table_calendar: ^2.2.2
+  url_launcher: ^5.4.2
+  table_calendar: ^2.2.3
   google_maps_flutter: ^0.5.25+3
   # TODO: test in-app webview/browser
   # Uncomment when we impl: google_fonts: ^0.3.9

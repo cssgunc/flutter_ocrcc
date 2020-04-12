@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ResourcesAdvocacyPage extends StatefulWidget {
   ResourcesAdvocacyPage({Key key, this.title}) : super(key: key);
@@ -9,6 +10,15 @@ class ResourcesAdvocacyPage extends StatefulWidget {
 }
 
 class _ResourcesAdvocacyPageState extends State<ResourcesAdvocacyPage> {
+  
+  _launchURL() async {
+    const url = 'http://ocrcc.org/get-help/advocacy/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,23 +56,17 @@ class _ResourcesAdvocacyPageState extends State<ResourcesAdvocacyPage> {
               height: (MediaQuery.of(context).size.height - 100) / 8,
               child: RaisedButton.icon(
                 color: Colors.white,
-                onPressed: (){
-                  // TODO: Navigate to https://ocrcc.org/get-help/helpline/
-                  // Navigator.pushReplacementNamed(
-                  //   context,
-                  //   '/resources_24hour',
-                  // );
-                },
+                onPressed: _launchURL,
                 icon: Icon(
                   Icons.blur_circular, 
                   size: 25.0,
-                  color: Color(0xFF7A7A7A), // Dark Grey
+                  color: Color(0xFF823876), // Purple
                 ),
-                label: Text('OCRCC.org',
+                label: Text('ocrcc.org/advocacy',
                   style:(
                     TextStyle(
                       fontSize: 20.0,
-                      color: Color(0xFF7A7A7A), // Dark Grey
+                      color: Color(0xFF823876), // Purple
                     )
                   ),
                 ),
