@@ -15,7 +15,7 @@ class _ResourcesPageState extends State<ResourcesPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFF48B9BC), // Teal
-        title: Text('Get Help'),
+        title: Text('Resources/Get Help'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.apps, size: 30.0, color: Colors.white),
@@ -133,10 +133,10 @@ class _ResourcesPageState extends State<ResourcesPage> {
               height: (MediaQuery.of(context).size.height - 100) / 4,
               child: RaisedButton.icon(
                 color: Colors.white,
-                onPressed: () {
-                  showDialog(
-                    context: context,
-                    builder: (_) => HourHelpOverlay(),
+                onPressed: (){
+                  Navigator.pushReplacementNamed(
+                    context,
+                    '/resources_24hour',
                   );
                 },
                 icon: Icon(
@@ -159,10 +159,10 @@ class _ResourcesPageState extends State<ResourcesPage> {
               height: (MediaQuery.of(context).size.height - 100) / 4,
               child: RaisedButton.icon(
                 color: Colors.white,
-                onPressed: () {
-                  showDialog(
-                    context: context,
-                    builder: (_) => SupportOverlay(),
+                onPressed: (){
+                  Navigator.pushReplacementNamed(
+                    context,
+                    '/resources_support',
                   );
                 },
                 icon: Icon(
@@ -185,10 +185,10 @@ class _ResourcesPageState extends State<ResourcesPage> {
               height: (MediaQuery.of(context).size.height - 100) / 4,
               child: RaisedButton.icon(
                 color: Colors.white,
-                onPressed: () {
-                  showDialog(
-                    context: context,
-                    builder: (_) => TherapyOverlay(),
+                onPressed: (){
+                  Navigator.pushReplacementNamed(
+                    context,
+                    '/resources_therapy',
                   );
                 },
                 icon: Icon(
@@ -211,10 +211,10 @@ class _ResourcesPageState extends State<ResourcesPage> {
               height: (MediaQuery.of(context).size.height - 100) / 4,
               child: RaisedButton.icon(
                 color: Colors.white,
-                onPressed: () {
-                  showDialog(
-                    context: context,
-                    builder: (_) => AdvocacyOverlay(),
+                onPressed: (){
+                  Navigator.pushReplacementNamed(
+                    context,
+                    '/resources_advocacy',
                   );
                 },
                 icon: Icon(

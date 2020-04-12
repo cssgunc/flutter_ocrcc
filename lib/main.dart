@@ -5,6 +5,10 @@ import 'calendar.dart';
 import 'call.dart';
 import 'locate.dart';
 import 'resources.dart';
+import 'resources_24hour.dart';
+import 'resources_support.dart';
+import 'resources_therapy.dart';
+import 'resources_advocacy.dart';
 
 void main() => runApp(MyApp());
 //  TODO: Add app icon
@@ -47,6 +51,10 @@ class MyApp extends StatelessWidget {
         '/call': (context) => CallPage(),
         '/locate': (context) => LocatePage(),
         '/resources': (context) => ResourcesPage(),
+        '/resources_24hour': (context) => Resources24HourPage(),
+        '/resources_support': (context) => ResourcesSupportPage(),
+        '/resources_therapy': (context) => ResourcesTherapyPage(),
+        '/resources_advocacy': (context) => ResourcesAdvocacyPage(),
       },
     );
   }
