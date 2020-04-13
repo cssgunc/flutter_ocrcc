@@ -117,6 +117,12 @@ class _ResourcesSupportPageState extends State<ResourcesSupportPage> {
             ),
             Divider(),
             Text(
+              'OCRCC holds events in accessible buildings and is committed to disability access, equal opportunity, and reasonable accommodation. We also offer childcare on request. To request accommodation or childcare, contact us at least 7 days in advance at (919) 967-7273 or groups@ocrcc.org.',
+              style: TextStyle(fontSize: 12.0, fontStyle: FontStyle.italic),
+              textAlign: TextAlign.justify,
+            ),
+            Divider(),
+            Text(
               'Examples of Support Groups and Workshops We Have Offered',
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
               textAlign: TextAlign.justify,

@@ -62,6 +62,7 @@ class _Resources24HourPageState extends State<Resources24HourPage> {
               style: TextStyle(fontWeight: FontWeight.bold),
               textAlign: TextAlign.justify,
             ),
+            Divider(),
             Text(
               'Our three helplines operate 24 hours a day, every day of the year, whether it’s to answer questions, share information about our services, or just to talk.  You can call us immediately after the experience, weeks, or even years later.',
               textAlign: TextAlign.justify,
@@ -74,19 +75,22 @@ class _Resources24HourPageState extends State<Resources24HourPage> {
             ),
             Divider(),
             Text(
-              'A. During business hours (Monday-Friday, 9am-4pm)',
+              'During business hours (Monday-Friday, 9am-4pm)',
               style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.bold),
               textAlign: TextAlign.justify,
             ),
+            Divider(),
             Text(
               'You will speak directly to a staff member.',
               textAlign: TextAlign.justify,
             ),
+            Divider(),
             Text(
-              'B. After business hours and on weekends',
+              'After business hours and on weekends',
               style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.bold),
               textAlign: TextAlign.justify,
             ),
+            Divider(),
             Text(
               'You will speak to an answering service. They will ask for your first name and phone number.',
               textAlign: TextAlign.justify,

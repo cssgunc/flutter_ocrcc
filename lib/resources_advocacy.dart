@@ -40,15 +40,123 @@ class _ResourcesAdvocacyPageState extends State<ResourcesAdvocacyPage> {
           )
         ],
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 15.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Text(
-              'This app was created in collaboration with the Orange County Rape Crisis Center (OCRCC) and UNC-Chapel Hill CS + Social Good, a division of TechShift.',
-              style: TextStyle(fontSize: 15.0),
-              textAlign: TextAlign.left,
+              'Advocacy',
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.justify,
+            ),
+            Divider(),
+            Text(
+              'We offer a wide range of advocacy services that provide support to clients based on their individual needs throughout the healing process.',
+              textAlign: TextAlign.justify,
+            ),
+            Divider(),
+            Text(
+              'What We Offer',
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.justify,
+            ),
+            Divider(),
+            Text(
+              '• Safety planning',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '• Assistance finding housing and filing for benefits',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '• Assistance with transportation to appointments',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '• Support with Victim’s Impact Statement, Victim’s Compensation, and Address Confidentiality Program',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '• Ongoing emotional support throughout the case management process',
+              textAlign: TextAlign.center,
+            ),
+            Divider(),
+            Text(
+              'Advocacy Is Available In The More Specific Ways Found Below:',
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.justify,
+            ),
+            Divider(),
+            Text(
+              'Medical Advocacy',
+              style: TextStyle(fontWeight: FontWeight.bold),
+              textAlign: TextAlign.justify,
+            ),
+            Text(
+              '– Support during Sexual Assault Forensic Exams, performed by a SANE (Sexual Assault Nurse Examiner)',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '– Accompaniment to hospital visits',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '– Accompaniment to follow-up doctor appointments',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '– Assistance with forensic interviews',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '– Assessment of medical bills',
+              textAlign: TextAlign.center,
+            ),
+            Divider(),
+            Text(
+              'Legal Advocacy',
+              style: TextStyle(fontWeight: FontWeight.bold),
+              textAlign: TextAlign.justify,
+            ),
+            Text(
+              '– Accompaniment to meetings with lawyers',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '– Help filing 50C protective orders',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '– Accompaniment to court dates and hearing',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '– Access to free legal advice on a case by case basis (family and immigration law)',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '– Accompaniment to meetings with the District Attorney’s Office',
+              textAlign: TextAlign.center,
+            ),
+            Divider(),
+            Text(
+              'Law Enforcement Advocacy',
+              style: TextStyle(fontWeight: FontWeight.bold),
+              textAlign: TextAlign.justify,
+            ),
+            Text(
+              '– Assistance filing police reports',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '– Accompaniment to the police station',
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              '– Support navigation reporting options',
+              textAlign: TextAlign.center,
             ),
             Divider(),
             SizedBox(

@@ -105,27 +105,27 @@ class _ResourcesTherapyPageState extends State<ResourcesTherapyPage> {
             ),
             Divider(),
             Text(
-              '• No insurance or accessing services through insurance would compromise safety',
+              'No insurance or accessing services through insurance would compromise safety',
               textAlign: TextAlign.center,
             ),
             Text(
-              '• Lacks finances for high copay',
+              'Lacks finances for high copay',
               textAlign: TextAlign.center,
             ),
             Text(
-              '• Needs accommodations for mobility aids',
+              'Needs accommodations for mobility aids',
               textAlign: TextAlign.center,
             ),
             Text(
-              '• Feels unsafe with other providers',
+              'Feels unsafe with other providers',
               textAlign: TextAlign.center,
             ),
             Text(
-              '• Needs bilingual providers',
+              'Needs bilingual providers',
               textAlign: TextAlign.center,
             ),
             Text(
-              '• Not receiving mental health treatment elsewhere',
+              'Not receiving mental health treatment elsewhere',
               textAlign: TextAlign.center,
             ),
             Divider(),
