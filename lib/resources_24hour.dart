@@ -48,7 +48,7 @@ class _Resources24HourPageState extends State<Resources24HourPage> {
           children: <Widget>[
             Text(
               '24-Hour Helplines',
-              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
               textAlign: TextAlign.justify,
             ),
             Divider(),

@@ -47,7 +47,7 @@ class _ResourcesAdvocacyPageState extends State<ResourcesAdvocacyPage> {
           children: <Widget>[
             Text(
               'Advocacy',
-              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
               textAlign: TextAlign.justify,
             ),
             Divider(),

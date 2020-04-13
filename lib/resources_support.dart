@@ -48,7 +48,7 @@ class _ResourcesSupportPageState extends State<ResourcesSupportPage> {
           children: <Widget>[
             Text(
               'Support Groups + Workshops',
-              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
               textAlign: TextAlign.justify,
             ),
             Divider(),
